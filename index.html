@@ -13,19 +13,19 @@
     <script src="css/Gp/assets/js/main.js"></script>
 </head>
   <body class="custom-overflow" style="background-color: #1B2328; overflow-x: hidden !important;  ">
-    <audio id="audio" src="img/y2mate.com - 321Jazz  Coffee Time  Cafe Jazz Music 2020 .mp3" autoplay loop></audio>
+    <audio id="audioBack" src="music/jazz.mp3" autoplay loop></audio>
 
     <header id="header" class="fixed-top">
         <nav id="navbar" style="background-color: #1b2328;" class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container col-12">
-                <div class="col-6">
+                <div class="col-4">
                     <a class="dipslay-3" href="#home"> <span> <img src="img/xernomm.png" alt="" class="col-6"></span> </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon mx-3 "><i class="fa-solid fa-bars text-white"></i></span>
                     </button>
                 </div>
               
-                <div class="col-6 mx-3">
+                <div class="col-8 mx-3">
                     <div class="collapse navbar-collapse" id="navbarColor01">
                         <ul class="navbar-nav mx-auto">
                           <li class="nav-item">
@@ -47,14 +47,34 @@
                           <li class="nav-item">
                             <a class="nav-link scrollto" href="#contact">Connect Me</a>
                           </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Music
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li id="jazz"><a class="dropdown-item">Jazz Mood</a></li>
+                              <li id="lofi"><a class="dropdown-item">Lo-Fi</a></li>
+                              <li id="rock"><a class="dropdown-item">Rock</a></li>
+                              <li id="pop"><a class="dropdown-item">Pop</a></li>
+                              
+                            </ul>
+                          </li>
                         </ul>
                       </div>
+                </div>
+
+                <div id="playPauseBtn" class="col-2">
+                  <img id="pause" src="img/pause.svg" alt="" class="col-3">
+                  <img id="play" src="img/play-fill.svg" alt="" class="col-3 d-none">
+                </div>
+
+                <div class="col-3" id="musicChoice">
+                  
                 </div>
               
             </div>
           </nav>
     </header>
-    
     
 
   <div id="home" class="pb-5" style="background-color: #1B2328;">
@@ -659,5 +679,5 @@
 </body>
 
 <script src="js/riilJs.js"></script>
-
+<script src="js/music.js"></script>
 </html>
