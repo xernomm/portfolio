@@ -32,7 +32,7 @@ jazz.addEventListener('click',function(){
 })
 
 lofi.addEventListener('click', function(){
-  audio.setAttribute('src','music/lofi.mp3')
+  audio.setAttribute('src','https://youtu.be/cePfohVuD4I')
 })
 pop.addEventListener('click', function(){
   audio.setAttribute('src','music/pop.mp3')
