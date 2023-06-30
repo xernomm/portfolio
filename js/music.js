@@ -6,6 +6,8 @@ var jazz = document.getElementById('jazz')
 var lofi = document.getElementById('lofi')
 var rock = document.getElementById('rock')
 var pop = document.getElementById('pop')
+var graymont = document.getElementById('graymont')
+
 var isPlaying = false;
 
 
@@ -32,7 +34,7 @@ jazz.addEventListener('click',function(){
 })
 
 lofi.addEventListener('click', function(){
-  audio.setAttribute('src','https://youtu.be/cePfohVuD4I')
+  audio.setAttribute('src','music/lofi.mp3')
 })
 pop.addEventListener('click', function(){
   audio.setAttribute('src','music/pop.mp3')
@@ -40,4 +42,8 @@ pop.addEventListener('click', function(){
 
 rock.addEventListener('click', function(){
   audio.setAttribute('src','music/rock.mp3')
+})
+
+graymont.addEventListener('click', function(){
+  audio.setAttribute('src','music/graymont.mp3')
 })
