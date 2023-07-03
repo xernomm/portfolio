@@ -32,7 +32,7 @@
     position: sticky !important;
     z-index: 997 !important;
     margin-top: 0 !important;
-    opacity: 90%;
+    background-color: #1b2328a9 !important;
  }
 
  .bi-github:hover{
