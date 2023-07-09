@@ -1,29 +1,4 @@
-let pict = document.getElementById("homeprofile");
-let vid = document.getElementById("homeprofile2");
-var borRad1 = "25% 10%;"
-var borRad2 = "10px 100px / 120px;"
-pict.style.borderRadius=borRad1
 
-pict.addEventListener('mouseenter', handleMouseEnter);
-pict.addEventListener('mouseleave', handleMouseLeave);
-vid.addEventListener('mouseenter', handleMouseEnter);
-vid.addEventListener('mouseleave', handleMouseLeave);
-
-function handleMouseEnter() {
-
-  pict.classList.add('d-none')
-  vid.classList.add('d-block')
-  vid.style.borderRadius=borRad2
-  vid.style.transition="border-radius 0.5s";
-  vid.classList.remove('d-none')
-}
-
-function handleMouseLeave() {
-  vid.classList.add('d-none')
-  pict.classList.add('d-block')
-  pict.classList.remove('d-none')
-
-}
 
 let skillCard1 = document.getElementById('skillCard1');
 let skillBody1 = document.getElementById('skillBody1')
@@ -336,7 +311,6 @@ const iAm = document.getElementById('iAm')
 const hobbiesText = document.getElementById('hobbiesText')
 const photosText = document.getElementById('photosText')
 const musicImg = document.getElementById('musicImg')
-const projectText = document.getElementById('projectText')
 const hobbiesImg1 = document.getElementById('hobbiesImg1')
 const musicText = document.getElementById('musicText')
 const photosImg = document.getElementById('photosImg')
@@ -364,7 +338,6 @@ observer.observe(nonTech4);
 observer.observe(hobbiesText);
 observer.observe(photosText);
 observer.observe(musicImg);
-observer.observe(projectText);
 observer.observe(hobbiesImg1);
 observer.observe(musicText);
 observer.observe(photosImg);
