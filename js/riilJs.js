@@ -195,26 +195,6 @@ skillCard10.addEventListener('mouseleave', function skillCardLeave1(){
   skillCard10.style.backgroundColor = defaultBackgroundColor;
 })
 
-// // Function to handle the intersection event
-// function handleIntersection(entries) {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('active');
-//     } else {
-//       entry.target.classList.remove('active');
-//     }
-//   });
-// }
-
-// // Create a new Intersection Observer
-// const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-
-// // Get the skills section element
-// const skillsSection = document.getElementById('skillsSection');
-
-// // Observe the skills section
-// observer.observe(skillsSection);
-
 function handleIntersection(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -235,7 +215,6 @@ const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 }
 // Get the skill cards
 
 const skillsSection = document.getElementById('skillsSection');
-// const nonTechSection = document.getElementById('nonTechSection');
 const about1 = document.getElementById('about1')
 const about2 = document.getElementById('about2')
 const about3 = document.getElementById('about3')
@@ -259,7 +238,6 @@ const contacts4= document.getElementById('contacts4')
 
 // Observe each skill card
 observer.observe(skillsSection);
-// observer.observe(nonTechSection);
 observer.observe(about1);
 observer.observe(about2);
 observer.observe(about3);
