@@ -215,6 +215,7 @@ const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 }
 // Get the skill cards
 
 const skillsSection = document.getElementById('skillsSection');
+const experience = document.getElementById('expcontent');
 const about1 = document.getElementById('about1')
 const about2 = document.getElementById('about2')
 const about3 = document.getElementById('about3')
@@ -238,6 +239,7 @@ const contacts4= document.getElementById('contacts4')
 
 // Observe each skill card
 observer.observe(skillsSection);
+observer.observe(experience);
 observer.observe(about1);
 observer.observe(about2);
 observer.observe(about3);

@@ -258,6 +258,11 @@ padding-top: 9%;
     border-radius: 25% 10%;
   }
 
+  .about1{
+    border-radius: 25% 10%;
+
+  }
+
   #pp2{
     border-radius: 10% 30% 40% 30%;
   }
@@ -344,10 +349,18 @@ padding-top: 9%;
 
   }
   
-  #about4.inactive {
+  #expcontent.inactive {
     opacity: 0;
-    transform: translateY(50px);
-    transition-delay: 0.8s;
+  transform: translateX(50%);
+  transition-delay: 0.2s;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  #expcontent.active {
+    opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
   }
 
