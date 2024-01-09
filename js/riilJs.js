@@ -219,7 +219,6 @@ const experience = document.getElementById('expcontent');
 const about1 = document.getElementById('about1')
 const about2 = document.getElementById('about2')
 const about3 = document.getElementById('about3')
-const about4 = document.getElementById('about4')
 const hello = document.getElementById('hello')
 const iAm = document.getElementById('iAm')
 const hobbiesText = document.getElementById('hobbiesText')
@@ -243,7 +242,6 @@ observer.observe(experience);
 observer.observe(about1);
 observer.observe(about2);
 observer.observe(about3);
-observer.observe(about4);
 observer.observe(hello);
 observer.observe(iAm);
 observer.observe(hobbiesText);
