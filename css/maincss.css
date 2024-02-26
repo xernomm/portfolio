@@ -356,6 +356,21 @@ padding-top: 9%;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 
+  #expcontent2.active {
+    opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+  }
+
+  #expcontent2.inactive {
+    opacity: 0;
+  transform: translateX(50%);
+  transition-delay: 0.2s;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
   #expcontent.active {
     opacity: 1;
   transform: translateX(0);
@@ -363,6 +378,7 @@ padding-top: 9%;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
   }
+
 
   .custom-form {
     color: #1B2328;
